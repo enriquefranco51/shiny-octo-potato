@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+Call Campaign Scheduler
+  <head>
+    <form>
+    <title>SVAII_Scheduler</title>
+  </head>
+  <body>
+    <!-- Include form for user submissions here -->
+    <form id="submissionForm" action="/submit-form" method="POST">
+      <!-- Add form inputs (name, email, phone number) as necessary -->
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="tel" name="phone_number" placeholder="Phone Number" required />
+      <!-- Add submit button -->
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Include a container to display call initiations and results -->
+    <div id="callResultsContainer"></div>
+
+    <script src="/js/call_number.js"></script>
+  </body>
+</html>
